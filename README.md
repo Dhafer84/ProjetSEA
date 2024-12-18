@@ -58,5 +58,5 @@ Projet SEA_Dhafer&Yacine/
   - `psutil`  
 
 ## Auteurs  
-- **Dhafer**  
+- **Dhafer BOUTHELJA**  
 - **Yacine Hantous**  
