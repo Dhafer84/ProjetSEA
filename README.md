@@ -1,3 +1,7 @@
+Voici une version mise à jour de votre fichier README avec l'ajout d'un tableau comparatif entre les performances Mono-thread et Multi-thread :  
+
+---
+
 # Comparaison des Performances : Mono-Thread vs Multi-Thread  
 
 ## Description  
@@ -49,6 +53,15 @@ Projet SEA_Dhafer&Yacine/
 ## Résultats  
 - **`performance_comparaison.png` :** Comparaison des temps d'exécution entre mono-thread et multi-thread.  
 - **`ressources_comparaison.png` :** Comparaison de l'utilisation du CPU et de la mémoire.  
+
+## Tableau Comparatif  
+
+| Critère               | Mono-thread                  | Multi-thread                |  
+|-----------------------|-----------------------------|-----------------------------|  
+| **Exécution**         | Séquentielle                | Parallèle                   |  
+| **Complexité**        | Faible                      | Moyenne (gestion des threads) |  
+| **Utilisation CPU**   | Faible (un seul cœur utilisé) | Plus élevée (plusieurs cœurs utilisés) |  
+| **Temps d'exécution** | Plus long                   | Potentiellement plus court  |  
 
 ## Dépendances  
 - Python 3  
