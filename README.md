@@ -56,12 +56,17 @@ Projet SEA_Dhafer&Yacine/
 
 ## Tableau Comparatif  
 
-| Critère               | Mono-thread                  | Multi-thread                |  
-|-----------------------|-----------------------------|-----------------------------|  
-| **Exécution**         | Séquentielle                | Parallèle                   |  
-| **Complexité**        | Faible                      | Moyenne (gestion des threads) |  
-| **Utilisation CPU**   | Faible (un seul cœur utilisé) | Plus élevée (plusieurs cœurs utilisés) |  
-| **Temps d'exécution** | Plus long                   | Potentiellement plus court  |  
+| **Critère**             | **Mono-thread**                            | **Multi-thread**                          |
+|-------------------------|--------------------------------------------|-------------------------------------------|
+| **Exécution**           | Séquentielle (un filtre après l'autre)     | Parallèle (plusieurs filtres en même temps) |
+| **Complexité**          | Simple (pas de gestion des threads)        | Moyenne (gestion et synchronisation des threads) |
+| **Temps d'exécution**   | Plus long                                  | Potentiellement plus court si plusieurs cœurs sont disponibles |
+| **Utilisation CPU (Début)** | Modérée (1 thread actif à la fois)        | Plus élevée (plusieurs threads actifs simultanément) |
+| **Utilisation CPU (Fin)**   | Plus stable                              | Peut être instable selon la charge des threads |
+| **Utilisation mémoire (Début)** | Faible (1 seule copie de l'image en mémoire) | Moyennement élevée (chaque thread peut avoir sa copie en mémoire) |
+| **Utilisation mémoire (Fin)**   | Stable (aucune montée en charge importante) | Peut augmenter temporairement selon le nombre de threads actifs |
+| **Efficacité sur petits fichiers** | Très bonne (charge limitée)               | Légèrement moins bonne (threads inutiles sur des fichiers légers) |
+| **Efficacité sur gros fichiers**   | Plus lente, dépend d’un seul cœur         | Plus rapide grâce à la distribution de la charge sur plusieurs threads |
 
 ## Dépendances  
 - Python 3  
